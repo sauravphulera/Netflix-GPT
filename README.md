@@ -13,7 +13,10 @@ Website URL => https://netflix-gpt-e0f04.web.app/
 - Firebase Setup
 - Deployment with Firebase
 - Authentication using Firebase for signin and signup
-- Implemented Redux
+- Implemented Redux to store user Info
+- on State change of User(login/logout) navigate to respective pages
+- Get Movies Data from TBD API's
+- Store Movies Data in store
 
 # Features
 

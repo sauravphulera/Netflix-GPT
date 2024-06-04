@@ -6,9 +6,10 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // everything happens twice in local in strict mode not in prod (React does some extra rendering to check some inconsisency b/w re renders)
+  //<React.StrictMode>
+  <App />
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
