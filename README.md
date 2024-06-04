@@ -1,7 +1,19 @@
 # Netflix GPT
 
+Website URL => https://netflix-gpt-e0f04.web.app/
+
 - Create React App
 - Configured Tailwind
+- Header
+- Routing of App
+- Login Form
+- Sign Up Form
+- Form Validation
+- useRef Hook
+- Firebase Setup
+- Deployment with Firebase
+- Authentication using Firebase for signin and signup
+- Implemented Redux
 
 # Features
 
