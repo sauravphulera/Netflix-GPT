@@ -18,6 +18,8 @@ Website URL => https://netflix-gpt-e0f04.web.app/
 - Get Movies Data from TBD API's
 - Store Movies Data in store
 - Embeded youtube video player and autoplayed it for home page
+- Listed all Movies (Popular, trending, upcoming and top rate)
+- Created Custom hooks for calling all these api's and provide them in store
 
 # Features
 
