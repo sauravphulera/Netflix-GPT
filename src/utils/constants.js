@@ -7,3 +7,5 @@ export const API_OPTIONS = {
 		Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNWQzNDI5MGU5MDg0MTNhZGMwMDI0ZDJhZTg1YjI3NCIsInN1YiI6IjY2NWY0OWE0ZWY0OTBmNWY5ZGMyNzcyOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jyk7VltA9jszLpCw_27GpQAB9OkFeluCDPEbYaRrZP8'
 	}
 }
+
+export const MOVIE_POSTER_URL = 'https://image.tmdb.org/t/p/original/'

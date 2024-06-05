@@ -73,7 +73,7 @@ const Login = () => {
 			<div className="bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/86742114-c001-4800-a127-c9c89ca7bbe4/IN-en-20240527-popsignuptwoweeks-perspective_alpha_website_large.jpg')] h-screen" >
 				<Header />
 
-				<div className='flex justify-center items-center h-[calc(80%-96px)]'>
+				<div className='flex justify-center items-center h-[calc(100%-96px)]'>
 					<form onSubmit={(e) => e.preventDefault()} className='bg-[rgba(0,0,0,0.75)] flex flex-col items-center justify-center py-[48px] px-12 rounded-md w-fit gap-[16px]'>
 						<div className='text-white font-bold text-3xl mb-2 self-start'>{isSigninForm ? 'Sign in' : 'Sign Up'}</div>
 						<div className='w-[300px] flex flex-col gap-[10px]'>

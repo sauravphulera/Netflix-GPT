@@ -53,7 +53,7 @@ const Header = () => {
 		});
 	}
 	return (
-		<div className="absolute w-screen px-16 py-8 bg-gradient-to-b from-black z-10 flex justify-between">
+		<div className="absolute w-screen px-16 py-8 bg-gradient-to-b from-black z-50 flex justify-between">
 			<div>
 				{logo}
 			</div>

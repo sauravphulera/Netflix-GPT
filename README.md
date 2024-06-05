@@ -17,6 +17,7 @@ Website URL => https://netflix-gpt-e0f04.web.app/
 - on State change of User(login/logout) navigate to respective pages
 - Get Movies Data from TBD API's
 - Store Movies Data in store
+- Embeded youtube video player and autoplayed it for home page
 
 # Features
 
