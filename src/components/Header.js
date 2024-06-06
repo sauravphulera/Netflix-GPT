@@ -7,11 +7,18 @@ import { useSelector } from 'react-redux';
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from 'react-redux'
 import { addUser, removeUser } from '../utils/userSlice'
+import { toggleGptSearchView } from '../utils/gptSlice';
+import { SUPPORTED_LANGUAGES } from '../utils/constants';
+import { updateLanguage } from '../utils/configSlice';
 const Header = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
-
 	const user = useSelector((store) => store.user)
+
+	const showGptSearch = useSelector((store) => store.gpt.showGptSearch)
+
+	const selectLangInput = useRef();
+
 	console.log(user);
 
 
@@ -42,6 +49,17 @@ const Header = () => {
 	}, [])
 
 
+	const handleLanguageChange = () => {
+		if (selectLangInput?.current?.value) {
+			dispatch(updateLanguage(selectLangInput?.current?.value))
+		}
+	}
+
+	const handleGptSearchClick = () => {
+		// toggle gpt search
+		dispatch(toggleGptSearchView());
+	}
+
 	const handleSignOut = () => {
 		signOut(auth).then(() => {
 			// Sign-out successful.
@@ -53,13 +71,36 @@ const Header = () => {
 		});
 	}
 	return (
-		<div className="absolute w-screen px-16 py-8 bg-gradient-to-b from-black z-50 flex justify-between">
+		<div className="absolute w-screen px-16 py-8 bg-gradient-to-b from-black z-50 flex justify-between items-center">
 			<div>
 				{logo}
 			</div>
-			{user && <div className='cursor-pointer' onClick={handleSignOut}>
-				<img alt='user' src={user?.payload?.photoURL} />
-			</div>}
+			<div className='flex items-center'>
+				{
+					user && (
+						<>
+							{showGptSearch &&
+								<div>
+									<select className='bg-black text-white cursor-pointer p mr-4 focus:outline-none' ref={selectLangInput} onChange={handleLanguageChange}>
+										{
+											SUPPORTED_LANGUAGES.map((lang) => {
+												return <option value={lang.key} key={lang.key}>{lang.name}</option>
+											})
+										}
+									</select>
+								</div>}
+							<button className='px-4 py-1 rounded-sm font-semibold mr-4 text-white bg-red-600' onClick={handleGptSearchClick}>
+								{showGptSearch ? 'HomePage' : 'GPT Search'}
+							</button>
+							<div className='cursor-pointer' onClick={handleSignOut}>
+								<img alt='user' src={user?.payload?.photoURL} />
+							</div>
+						</>
+
+					)
+				}
+			</div>
+
 		</div>
 	)
 }

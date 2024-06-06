@@ -20,6 +20,8 @@ Website URL => https://netflix-gpt-e0f04.web.app/
 - Embeded youtube video player and autoplayed it for home page
 - Listed all Movies (Popular, trending, upcoming and top rate)
 - Created Custom hooks for calling all these api's and provide them in store
+- Multi Language Feature in GPT Search Page
+- Plug Open AI (GPT) API's
 
 # Features
 
