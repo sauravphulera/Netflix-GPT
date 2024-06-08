@@ -20,7 +20,10 @@ const MovieList = ({ title, movies }) => {
 					{
 						movies?.map((movie) => {
 
-							return (<MovieCard posterUrl={movie?.poster_path} key={movie.id} />)
+							if (movie?.poster_path) {
+								return (<MovieCard posterUrl={movie?.poster_path} key={movie.id} />)
+							}
+							return null;
 						})
 					}
 				</div>

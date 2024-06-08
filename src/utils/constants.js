@@ -4,7 +4,7 @@ export const API_OPTIONS = {
 	method: 'GET',
 	headers: {
 		accept: 'application/json',
-		Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNWQzNDI5MGU5MDg0MTNhZGMwMDI0ZDJhZTg1YjI3NCIsInN1YiI6IjY2NWY0OWE0ZWY0OTBmNWY5ZGMyNzcyOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jyk7VltA9jszLpCw_27GpQAB9OkFeluCDPEbYaRrZP8'
+		Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNWQzNDI5MGU5MDg0MTNhZGMwMDI0ZDJhZTg1YjI3NCIsInN1YiI6IjY2NWY0OWE0ZWY0OTBmNWY5ZGMyNzcyOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jyk7VltA9jszLpCw_27GpQAB9OkFeluCDPEbYaRrZP8',
 	}
 }
 
@@ -24,3 +24,5 @@ export const SUPPORTED_LANGUAGES = [
 		name: 'Spansih'
 	}
 ]
+
+export const SEARCH_API_URL = 'https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1&query='

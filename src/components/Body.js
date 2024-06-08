@@ -18,9 +18,6 @@ const Body = () => {
 		},
 	])
 
-
-
-
 	return (
 		<div className=''>
 			<RouterProvider router={appRouter} />
@@ -28,4 +25,8 @@ const Body = () => {
 	)
 }
 
+
+
 export default Body
+
+// 

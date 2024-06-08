@@ -14,7 +14,7 @@ const SecondaryContainer = () => {
 	 * 
 	 */
 	return (
-		<div className='bg-transparent mt-[-150px] z-50 relative px-16'>
+		<div className='bg-transparent mt-[-80px] z-50 relative px-16 xl:mt-[-180px] 2xl:mt-[-300px]'>
 			<MovieList title={"Now Playing"} movies={movies?.nowPlayingMovies} />
 			<MovieList title={"Trending"} movies={movies?.popularMovies} />
 			<MovieList title={"Popular Today"} movies={movies?.topRatedMovies} />
