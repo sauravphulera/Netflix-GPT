@@ -3,7 +3,7 @@ import { info, play } from '../assets/logo'
 
 const VideoTitle = ({ title, overview }) => {
 	return (
-		<div className='pt-[20%] text-white absolute px-16 w-screen aspect-video z-40'>
+		<div className='pt-[12%] sm:pt-[12%] md:pt-[20%] text-white absolute px-16 w-screen aspect-video z-40'>
 			<div className='text-3xl font-bold'>{title}</div>
 			<div className='w-3/5'>{overview}</div>
 			<div className='flex gap-5 mt-16'>

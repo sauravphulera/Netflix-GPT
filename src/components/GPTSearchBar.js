@@ -33,15 +33,10 @@ const GPTSearchBar = () => {
 
 		const promiseArr = gptMovies.map((movie) => searchMovies(movie))
 
-		console.log(gptMovies)
 		const data = await Promise.all(promiseArr)
 		//call search api for all movies
 
-		console.log(data);
 		dispatch(addGptMovieResult({ movieNames: gptMovies, movieResults: data }));
-
-
-		//console.log(resultString);
 	}
 
 	return (

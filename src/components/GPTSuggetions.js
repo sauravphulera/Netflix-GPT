@@ -14,7 +14,7 @@ const GPTSuggetions = () => {
 		<div className='p-4 bg-black text-white m-20 bg-opacity-80'>
 			{
 				gptMoviesNames.map((movie, index) => {
-					return <MovieList title={movie} movies={tmdbMovieResults[index]?.results} className="flex flex-wrap" />
+					return <MovieList title={movie} movies={tmdbMovieResults[index]?.results} key={movie} className="flex flex-wrap" />
 				})
 				//<MovieList title={gptMoviesNames[0]} movies={tmdbMovieResults[0]?.results} className="flex flex-wrap" />
 			}

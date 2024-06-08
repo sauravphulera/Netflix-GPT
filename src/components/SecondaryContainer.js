@@ -6,7 +6,6 @@ const SecondaryContainer = () => {
 
 	const movies = useSelector(store => store.movies);
 	if (!movies.nowPlayingMovies) return;
-	console.log(movies)
 	/**
 	 * Popular
 	 * Now Playing
@@ -14,7 +13,7 @@ const SecondaryContainer = () => {
 	 * 
 	 */
 	return (
-		<div className='bg-transparent mt-[-80px] z-50 relative px-16 xl:mt-[-180px] 2xl:mt-[-300px]'>
+		<div className='bg-transparent z-50 relative px-16 mt-[-40px] xl:mt-[-180px] 2xl:mt-[-300px]'>
 			<MovieList title={"Now Playing"} movies={movies?.nowPlayingMovies} />
 			<MovieList title={"Trending"} movies={movies?.popularMovies} />
 			<MovieList title={"Popular Today"} movies={movies?.topRatedMovies} />

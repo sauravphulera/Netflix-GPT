@@ -28,7 +28,7 @@ const Browse = () => {
 		 * 	- MovieList * n 
 		 * 		- MovieCard * n
 		 */
-		<div className='bg-black'>
+		<div className='bg-black h-screen sm:h-auto'>
 			<Header />
 			{showGptSearch ?
 				<GPTSearchPage />

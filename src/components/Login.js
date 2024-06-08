@@ -26,7 +26,6 @@ const Login = () => {
 
 	const handleBtnClick = () => {
 		// Validate the form data
-		console.log(email, password)
 		const msg = checkValidFormData(email.current.value, password.current.value);
 		if (msg) {
 			setErrMessage(msg);
@@ -37,7 +36,6 @@ const Login = () => {
 				.then((userCredential) => {
 					// Signed up 
 					const user = userCredential.user;
-					console.log(user);
 					updateProfile(user, {
 						displayName: name.current.value, photoURL: USER_AVATAR
 					}).then(() => {
@@ -59,7 +57,6 @@ const Login = () => {
 				.then((userCredential) => {
 					// Signed in 
 					const user = userCredential.user;
-					console.log(user);
 				})
 				.catch((error) => {
 					const errorCode = error.code;
