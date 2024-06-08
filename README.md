@@ -36,8 +36,27 @@ Website URL => https://netflix-gpt-e0f04.web.app/
     - Title and Description
 
   - Movie Suggetions
-  - Movie List \* N
+  - Movie List
 
 - Netflix GPT
   - Search Bar
   - Movie Suggetions
+
+# View On Screens
+  - 1536 * 864
+<img width="1346" alt="Screenshot 2024-06-08 at 4 23 13 PM" src="https://github.com/sauravphulera/Netflix-GPT/assets/16851666/23e977c4-43fe-426d-a6e7-5370732b2912">
+
+  - 1366 * 864
+    <img width="1152" alt="Screenshot 2024-06-08 at 4 18 02 PM" src="https://github.com/sauravphulera/Netflix-GPT/assets/16851666/a3d77034-b971-4805-8c0d-ae4e2019fabe">
+    
+  - Also compatible for 1280 * 720, 1920 * 1084
+
+# Mobile
+ IPhone SE
+ <img width="375" alt="Screenshot 2024-06-08 at 4 32 47 PM" src="https://github.com/sauravphulera/Netflix-GPT/assets/16851666/4511fe29-28ba-497c-857e-31079bc10dcd">
+ Samsung Galaxy s8+
+ <img width="368" alt="Screenshot 2024-06-08 at 4 34 25 PM" src="https://github.com/sauravphulera/Netflix-GPT/assets/16851666/94c4da46-946b-42f0-8508-0d8c7d2b5a04">
+
+Also compatible on Iphone 12,13,14 pro and pro max and some tabs.
+## It may not be available in all devices, this is just ademonstration and if somnebody want to contribute he can do so by sending a PR.
+
