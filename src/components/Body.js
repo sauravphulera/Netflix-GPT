@@ -3,6 +3,7 @@ import Login from './Login'
 import Browse from './Browse'
 import { createBrowserRouter } from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import { ProtectedRoute } from './ProtectedRoute'
 
 
 const Body = () => {
@@ -14,7 +15,11 @@ const Body = () => {
 		},
 		{
 			path: "/browse",
-			element: <Browse />
+			element: <ProtectedRoute></ProtectedRoute>,
+			children: [{
+				path: "/browse",
+				element: <Browse />
+			}]
 		},
 	])
 
